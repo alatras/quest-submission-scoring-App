@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "e39e6a8c-b2ac-4764-bc92-43cbb9f1e286",
+		"name": "Quest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "838562"
+	},
+	"item": [
+		{
+			"name": "claim quest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"questId\": \"4569bee2-8f42-4054-b432-68f6ddbc20b5\",\n   \"userId\": \"cb413e98-44a4-4bb1-aaa1-0b91ab1707e7\",\n   \"claimed_at\": \"2023-03-15T10:44:22+0000\",\n   \"access_condition\": [\n      {\n         \"type\": \"nft\",\n         \"operator\": \"contains\",\n         \"value\": \"0x1\"\n      },\n      {\n         \"type\": \"date\",\n         \"value\": \"2023-02-15T10:44:22+0000\",\n         \"operator\": \">\"\n      },\n      {\n         \"type\": \"level\",\n         \"value\": \"1\",\n         \"operator\": \">\"\n      }\n   ],\n   \"user_data\": {\n      \"completed_quests\": [\n         \"94e2e33e-07e9-4750-8cea-c033d7706057\"\n      ],\n      \"nfts\": [\n         \"0x1\",\n         \"0x2\"\n      ],\n      \"level\": 5\n   },\n   \"submission_text\": \"Lorem aaa mmm ipsum dolor sit amet Joyful Happy Vibrant Thrilled Euphoric Cheerful Delighted?\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/quest/submit",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"quest",
+						"submit"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "claim quest",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"questId\": \"4569bee2-8f42-4054-b432-68f6ddbc20b5\",\n   \"userId\": \"cb413e98-44a4-4bb1-aaa1-0b91ab1707e7\",\n   \"claimed_at\": \"2023-03-15T10:44:22+0000\",\n   \"access_condition\": [\n      {\n         \"type\": \"nft\",\n         \"operator\": \"contains\",\n         \"value\": \"0x1\"\n      },\n      {\n         \"type\": \"date\",\n         \"value\": \"2023-02-15T10:44:22+0000\",\n         \"operator\": \">\"\n      },\n      {\n         \"type\": \"level\",\n         \"value\": \"1\",\n         \"operator\": \">\"\n      }\n   ],\n   \"user_data\": {\n      \"completed_quests\": [\n         \"94e2e33e-07e9-4750-8cea-c033d7706057\"\n      ],\n      \"nfts\": [\n         \"0x1\",\n         \"0x2\"\n      ],\n      \"level\": 5\n   },\n   \"submission_text\": \"Lorem aaa mmm ipsum dolor sit amet Joyful Happy Vibrant Thrilled Euphoric Cheerful Delighted?\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/quest/submit",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"quest",
+								"submit"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "30"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1e-Gt8tV89hbxU6lkFOIGJOPpcT3b0\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 21 Jun 2023 23:35:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"score\": 6\n}"
+				}
+			]
+		}
+	]
+}
