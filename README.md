@@ -18,11 +18,6 @@ The Quest Submission Scoring App is a Node.js application built with the NestJS 
 
 To set up and run the application on your local machine or a production environment, follow the instructions below.
 
-### Prerequisites
-
-- Node.js 14.x or higher
-- NPM 6.x or higher
-
 ### Installation
 
 Install the application dependencies:

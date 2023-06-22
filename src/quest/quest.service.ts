@@ -2,6 +2,7 @@ import { Injectable, Logger } from '@nestjs/common';
 import { Condition, OperatorType, QuestDto } from './quest.dto';
 import { QuestResponseDto } from './quest-response.dto';
 import { TextModerationService } from '../common/text-moderation/text-moderation.service';
+import { joyfulWords } from '../common/data/constants';
 
 // completedQuests as a key-value store with questId-userId as the key
 const completedQuests: Map<string, boolean> = new Map();
@@ -235,15 +236,6 @@ export class QuestService {
     questDto: QuestDto,
     response: QuestResponseDto,
   ): void {
-    const joyfulWords = [
-      'Joyful',
-      'Happy',
-      'Vibrant',
-      'Thrilled',
-      'Euphoric',
-      'Cheerful',
-      'Delighted',
-    ];
     let joyfulWordCount = 0;
     const words = questDto.submission_text.split(/\s+/);
     for (const word of words) {
